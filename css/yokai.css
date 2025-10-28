@@ -33,7 +33,7 @@ body {
 
 /* Immagine principale */
 .cover{
-  background-image: url('./img/sfondo.png'); 
+  background-image: url('../img/sfondo.png'); 
   background-size: cover;    /* l’immagine copre tutto */
   
   background-position: center; 
@@ -220,4 +220,5 @@ opacity: 100%;
       padding: 20px;
       text-align: center;
       margin-top: 40px;
+
     }
