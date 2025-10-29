@@ -42,7 +42,7 @@ body {
 /* Titolo e sottotitlo principali */
 #Titolo{
   font-family: "Shippori Mincho B1", serif;
-  font-size: 50px;
+  font-size: 60px;
   text-shadow:2px 2px 2px #000 ;
 }
 
@@ -215,4 +215,5 @@ opacity: 100%;
       text-align: center;
       margin-top: 40px;
     }
+
 
