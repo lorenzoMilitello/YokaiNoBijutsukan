@@ -69,7 +69,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Autori</a></li>
             <li class="nav-item"><a class="nav-link" href="mappaGiappone.html">Mappa</a></li>
           </ul>
-          <form class="d-flex ms-auto" role="search">
+          <form class="d-flex ms-auto me-5" role="search">
             <i class="bi bi-search  me-2" style="font-size: 20px;"></i><!-- icona bootstrap -->
             <input class="form-control me-2" type="search" placeholder="cerca opere, artisti..." />
             <button class="btn btn-outline-secondary" type="submit">Cerca</button>
@@ -111,7 +111,6 @@
   </ol>
 </div>
 <div class="container bg-body-tertiary p-5 shadow rounded">
-    <hr><br>
     <ol>
       <!-- 1. Abstract -->
         <li class="titleWebProjectPlan fw-bolder" id="idea">Idea(Abstract)</li>
@@ -228,11 +227,11 @@
                 e permette di raggiungere facilmente le rappresentazioni dello Yōkai desiderato. La <strong>Galleria</strong> rappresenta 
               un altro fulcro, poichè raccoglie e mostra le opere artistiche legate ai vari Yōkai, permettendo l'accesso ai singoli
                Item, cioè alle schede dettagliate delle opere. <br>
-              La <strong>Mappa</strong> funge da strumento di naviazione alternativa, consentendo una visualizzazione spaziale dei contesti geografici
+              La <strong>Mappa</strong> funge da strumento di navigazione alternativa, consentendo una visualizzazione spaziale dei contesti geografici
                associati agli Yōkai. <br>
               Gli <strong>Autori</strong> rappresentano un'altra componente fondamentale: questa sezione raccoglie le informazioni sugli artisti,
                fornendo un elenco delle loro opere e rappresentando un altro percorso di accesso per poter raggiungere gli Item. <br>
-              La sezione <strong>In evidenza</strong> ha lo scopo di valorizzare i contenuti selezionati mettendo in rislato opere o Yōkai particolarmente
+              La sezione <strong>In evidenza</strong> ha lo scopo di valorizzare i contenuti selezionati mettendo in risalto opere o Yōkai particolarmente
                interessanti(sulla base di quante volte sono stati salvati dagli utenti).
             <br>   L'area di <strong>Login</strong> permette di accedere ad una pagina utente in cui si potranno salvare i contenuti preferiti
                 e visualizzati. <br>
@@ -279,23 +278,39 @@
               <p id="wireframeGalleria" class="fw-bold">Galleria wireframe</p>
               
                 <img class="img-fluid" src="./img/wireframes/Galleria.png" alt="wireframe galleria">
-              <p class="mt-4">Questo è il wireframe della <strong>galleria</strong> della collezione, caratterizzato da una parte superiore formata da i filtri che poi si applicheranno per la scelta dei vari item attraverso un bottone.
-                Dopodichè troviamo  un blocco che racchiude la vera e propria galleria con un formato di 3x3 item per pagina. Ogni item  sarà correlato di un titolo e/o descrizione. 
-                Alla fine della pagina troviamo un Pagination per poter scorrere fra le varie pagine del catalogo.
+              <p class="mt-4">Questo è il wireframe della <strong>galleria della collezione</strong>.
+                              Nella parte superiore è presente la sezione delle breadcrumbs, che ha la funzione di mostrare 
+                              all’utente il percorso di navigazione seguito all’interno del sito, consentendo di tornare 
+                              facilmente alle pagine precedenti. <br>
+                              Accanto ad essa si trova l’area dedicata ai filtri di ricerca, grazie ai quali l’utente può
+                              selezionare e visualizzare solo le rappresentazioni o gli Yokai che corrispondono a specifici criteri.
+                              <br> Subito sotto si sviluppa il blocco principale della collezione, composto da una griglia di card 
+                              disposte in formato 3x3 per pagina, ognuna contenente il titolo dell’opera, il nome dell’autore e
+                               l’immagine rappresentativa. <br>
+                               Infine, nella parte inferiore della pagina, è collocato il sistema di paginazione (Pagination) che permette di scorrere tra le diverse pagine del catalogo.
               </p>
               
             </li>
-            <!-- 5.3 wireframe Item -->
+          <!-- 5.3 wireframe Item -->
             <li class="mt-2">
               <p id="wireframeItem" class="fw-bold">Item wireframe</p>
                 <img class="img-fluid" src="./img/wireframes/Item.png" alt="wireframe item">
-                <p class="mt-4">Questo è il wireframe della pagina inerente all'oggetto della collezione(<strong>Item</strong>). Nella parte alta troviamo l'immagine raffiguarante
-                  la rappresentazione artistica con sotto di essa una tabella contentente tutti i dati relativi alla rappresentazione(Tiolo, Autore, Data, Tecnica ecc.). 
-                  Sulla destra troviamo una sezione formata da tre card di eventuali altre rappresentazioni consigliate o affini.
+                <p class="mt-4">Questo è il wireframe della pagina dedicata al singolo oggetto della collezione (<strong>Item</strong>).
+                  Nella parte superiore è presente la sezione delle breadcrumbs, che consente all’utente di visualizzare il percorso di
+                  navigazione seguito e di tornare rapidamente alle pagine precedenti, come la galleria o l’elenco degli Yōkai correlati. <br>
+                  Subito sotto si trova l’immagine principale dell’opera, che occupa una posizione centrale e rappresenta il fulcro
+                  della pagina. Al di sotto è collocata una tabella descrittiva contenente tutti i dati informativi relativi
+                  alla rappresentazione(titolo, autore, data, tecnica, formato e collezione di provenienza). <br>
+                  Sono inoltre presenti dei bottoni interattivi che permettono di salvare l’opera tra i preferiti dell’utente
+                  o condividerla attraverso i principali canali digitali. Sulla destra della pagina è infine prevista una sezione dedicata alle opere consigliate o affini,
+                  presentate sotto forma di card.
+
+
+                  
                 </p>
               </li>
 
-              <!-- 5.3 wireframe Mappa -->
+          <!-- 5.3 wireframe Mappa -->
             <li class="mt-2">
               <p id="wireframeMappa" class="fw-bold">Mappa wireframe</p>
                 <img class="img-fluid" src="./img/wireframes/Mappa.png" alt="wireframe Mappa Giappone">
@@ -368,14 +383,17 @@
               <li>Mappe realizzate con draw.io: <a href="https://www.drawio.com/" target="_blank">https://www.drawio.com/</a></li>
               <li>Per i font all'interno della pagina utilizzato Google Fonts: <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
               <li>Logo realizzato attraverso l'utilizzo dell'intelligenza artificiale Gemini: <a href="https://gemini.google.com" target="_blank">https://gemini.google.com</a></li>
-              <li>Creazione Mappa interattiva attraverso l'utlizzo del sito <a href="https://www.image-map.net/">https://www.image-map.net/</a></li>
+              <li>Creazione Mappa interattiva attraverso l'utlizzo del sito: <a href="https://www.image-map.net/">https://www.image-map.net/</a></li>
               <li>Implementazione dei social attraverso: <a href="https://platform.sharethis.com/">https://platform.sharethis.com/</a></li>
-              <li>Utilizzate icone dalla libreria di Boostrap<a href=" https://icons.getbootstrap.com/"> https://icons.getbootstrap.com/</a></li>
-          </ul>
+              <li>Utilizzate icone dalla libreria di Boostrap: <a href=" https://icons.getbootstrap.com/"> https://icons.getbootstrap.com/</a></li>
+              <li>Per informazioni relative agli Yokai: <a href="https://it.wikipedia.org/wiki/"> https://it.wikipedia.org/wiki/</a></li>
+              <li>Per categorie Yokai: <a href="yokai.com">yokai.com</a></li>
+              <li>Informazioni relative alle rappresentazioni: <a href="https://commons.wikimedia.org/wiki/">https://commons.wikimedia.org/wiki/</a></li>
+            </ul>
             <br>
           <p>Immagini:</p>
             <ul>
-              <li>immagini prese da WikiMediaCommons: <a href="https://commons.wikimedia.org/wiki/Pagina_principale">https://commons.wikimedia.org/wiki/Pagina_principale </a></li>
+              <li>immagini prese da WikiMediaCommons: <a href="https://commons.wikimedia.org/wiki/">https://commons.wikimedia.org/wiki </a></li>
             </ul>
             <br>
              <p>Codice:</p>
@@ -442,5 +460,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+
 
 
